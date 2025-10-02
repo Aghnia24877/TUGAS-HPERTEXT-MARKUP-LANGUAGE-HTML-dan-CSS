@@ -165,3 +165,26 @@ form button:hover {
   max-width: 900px; 
   transition: transform 0.3s, box-shadow 0.3s; /* ✅ FIXED */
 }
+
+/* Grid Container untuk projek */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* default desktop = 3 kolom */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Responsif Tablet */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* tablet = 2 kolom */
+  }
+}
+
+/* Responsif Mobile */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* mobile = 1 kolom */
+  }
+}
