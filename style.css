@@ -14,6 +14,24 @@ body {
   min-height: 100vh;
 }
 
+.mode{
+  display: absolute;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+
+#mode-toggle {
+  background: linear-gradient(90deg, #8e24aa, #ec407a);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -175,6 +193,27 @@ form button:hover {
   justify-content: center;
 }
 
+.message {
+  display: none; /* awalnya disembunyikan */;
+  font-weight: bold;
+  margin: 10px auto 0;
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 8px;
+  background: #4a148c;
+  color: #fff;
+}
+/* Default (Light Mode) */
+body {
+  background: linear-gradient(to bottom, #f8cdda, #fcb69f);
+  color: rgb(255, 255, 255);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: black !important;
+  color: white !important;
+}
 /* Responsif Tablet */
 @media (max-width: 768px) {
   .grid-container {

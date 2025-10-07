@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="mode">
+    <button id="mode-toggle">🌙 Dark mode</button>
+  </div>
   <header>
     <nav class="navbar">
       <div class="logo">🌸 Aghnia</div>
@@ -22,19 +25,23 @@
     <h2>Hubungi Aghnia Diffitri Naurasyahbana</h2>
     <form>
       <label for="nama">Nama:</label>
-      <input type="text" id="nama" name="nama" value="Aghnia Diffitri Naurasyahbana" readonly>
+      <input type="text" id="nama" name="nama"placeholder="Masukkan nama lengkapmu">
 
       <label for="nim">NIM:</label>
-      <input type="text" id="nim" name="nim" value="24091397006" readonly>
+      <input type="text" id="nim" name="nim" placeholder="Masukkan nim">
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" value="naurasyahbana0@gmail.com" readonly>
+      <input type="email" id="email" name="email" placeholder="Masukkan emailmu">
 
       <label for="pesan">Pesan:</label>
       <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan sesuatu untuk Aghnia, aku siap membaca"></textarea>
 
-      <button type="submit">Kirim</button>
+      <button type="button" id="submit">Kirim</button>
     </form>
+    <div id="notif" class="message">
+      <p id="notif-message">Terima kasih telah menghubungi Aghnia! Pesanmu sudah terkirim.</p>
+    </div>
   </section>
+  <script src="index.js"></script>
 </body>
 </html>
